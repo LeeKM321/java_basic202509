@@ -2,7 +2,7 @@ package oop.inter;
 
 // '조종 가능한' 자격증
 // 이 자격증을 따려면 아래에 명시한 모든 기능들을 반드시 만들어야 한다. (약속)
-public interface Controllable {
+public interface Controllable extends Parent {
 
     // 인터페이스에 변수를 선언하면 상수(static final)로 인식합니다.
     int NUM = 5;
