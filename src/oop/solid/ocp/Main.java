@@ -6,7 +6,7 @@ public class Main {
 
         DiscountCalculator calc = new DiscountCalculator();
 
-        long vipPrice = calc.calculateDiscount("VIP", 200000);
+        long vipPrice = calc.calculateDiscount(new VipDiscountPolicy(), 200000);
         System.out.println("vipPrice = " + vipPrice);
 
     }
