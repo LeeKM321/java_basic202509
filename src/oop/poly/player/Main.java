@@ -1,5 +1,7 @@
 package oop.poly.player;
 
+import oop.static_.utils.PrintUtil;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,6 +14,12 @@ public class Main {
         Hunter h2 = new Hunter("냥꾼2", "야옹이");
 
         m1.blizzard(w1, w2, m2, h1, h2);
+
+        PrintUtil.printLine();
+
+        h1.magicArrow(w2);
+        h1.magicArrow(m2);
+        h1.magicArrow(h2);
 
 
     }

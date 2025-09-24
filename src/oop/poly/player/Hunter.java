@@ -1,5 +1,7 @@
 package oop.poly.player;
 
+import oop.static_.utils.PrintUtil;
+
 public class Hunter extends Player {
 
     String pet;
@@ -19,6 +21,26 @@ public class Hunter extends Player {
     %s가 %d의 피해를 입었고, 남은 체력은 얼마다 라는 정보도 출력해 주시고
     Main 클래스에서 메서드를 호출해 보세요.
      */
+
+    public void magicArrow(Player target) {
+        System.out.printf("%s님이 %s님에게 매직 애로우를 시전했습니다!\n"
+                , this.nickname, target.nickname);
+
+        int damage; String job;
+        if (target instanceof Warrior) {
+            damage = 10; job = "전사";
+        } else if (target instanceof Mage) {
+            damage = 20; job = "마법사";
+        } else {
+            damage = 15; job = "사냥꾼";
+        }
+
+        target.hp -= damage;
+        System.out.printf("%s님(%s)이 %d의 피해를 입었습니다.\n", target.nickname, job, damage);
+        System.out.printf("%s님의 남은 체력: %d\n", target.nickname, target.hp);
+        PrintUtil.printLine();
+
+    }
 
 
     @Override
