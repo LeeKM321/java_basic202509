@@ -7,10 +7,10 @@ public class StrTest {
         long start = System.currentTimeMillis();
 
 
-        String str = "a";
-        for (int i = 0; i < 500000; i++) {
-            str += "a";
-        }
+//        String str = "a";
+//        for (int i = 0; i < 500000; i++) {
+//            str += "a";
+//        }
 
 
 //        StringBuilder sb = new StringBuilder("a");
@@ -23,6 +23,9 @@ public class StrTest {
 
         System.out.println("실행 결과: " + (end - start) * 0.001 + "초");
 
+        double pi = 3.141592;
+        long result = Math.round(pi*100);
+        System.out.println("result = " + result * 0.01);
 
 
     }
