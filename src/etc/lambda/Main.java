@@ -112,8 +112,10 @@ public class Main {
         List<Integer> map2 = MappingApple.map(numbers, n -> (int) Math.pow(n, 3));
         System.out.println("map2 = " + map2);
 
-        // 음식 리스트를 주면 첫글자만 뽑아와.
         PrintUtil.printLine();
+        // 음식 리스트를 주면 첫글자만 뽑아와.
+        List<Character> map3 = MappingApple.map(foods, f -> f.charAt(0));
+        System.out.println("map3 = " + map3);
 
 
     }
