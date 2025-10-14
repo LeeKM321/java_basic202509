@@ -32,6 +32,7 @@ public class Main {
         // 다형성을 적용해서 서로 다른 타입 객체를 모아놓을 수 있다. (이종 모음 배열)
         Car[] cars = {s1,s2,s3,p1,p2,p3,t1,t2,t3,t4};
         for (Car c : cars) {
+            System.out.println("UUID로 된 carId: " + c.getCarId().toString());
             c.run();
         }
 
