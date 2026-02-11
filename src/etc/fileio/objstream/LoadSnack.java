@@ -18,7 +18,9 @@ public class LoadSnack {
             List<Snack> snackList = (List<Snack>) ois.readObject();
 
             for (Snack snack : snackList) {
-                System.out.println(snack);
+                if (snack.getSnackName().equals("콘칲")) {
+                    System.out.println(snack);
+                }
             }
 
         } catch (Exception e) {
